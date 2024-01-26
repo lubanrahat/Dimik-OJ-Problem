@@ -13,14 +13,15 @@ int main()
     cin.ignore();
 
     while(tt--) {
+        int nums,count = 0;
         string s;
         getline(cin,s);
-        int nums,count = 0;
+
         stringstream ss(s);
 
         while(ss >> nums) {
             count++;
-        } 
+        }
 
         cout<<count<<endl;
     }
