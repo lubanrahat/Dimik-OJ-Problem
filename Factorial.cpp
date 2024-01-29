@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int factorial(int n) {
-    int fac = 1;
+unsigned long long int factorial(int n) {
+
+    unsigned long long int fac = 1;
+
     for(int i = 1; i <= n; i++) {
         fac *= i;
     }
@@ -22,7 +24,7 @@ int main()
         int n;
         cin >> n;
 
-        printf("%d\n",factorial(n));
+        printf("%llu\n",factorial(n));
     }
 
     return 0;
